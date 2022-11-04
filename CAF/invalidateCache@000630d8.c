@@ -1,0 +1,29 @@
+
+/* qcamera::QCamera3StreamMem::invalidateCache(unsigned int) */
+
+undefined4 __thiscall
+qcamera::QCamera3StreamMem::invalidateCache(QCamera3StreamMem *this,uint param_1)
+
+{
+  QCamera3Memory *this_00;
+  int *piVar1;
+  undefined8 uVar2;
+  Autolock aAStack28 [4];
+  int local_18;
+  
+  piVar1 = *(int **)(DAT_00063124 + 0x630e6);
+  local_18 = *piVar1;
+  android::Mutex::Autolock::Autolock(aAStack28,(Mutex *)(this + 0xe28));
+  this_00 = (QCamera3Memory *)(this + 0x614);
+  if (param_1 < *(uint *)(this + 0xe24)) {
+    this_00 = (QCamera3Memory *)(this + 4);
+  }
+  uVar2 = QCamera3Memory::invalidateCache(this_00,param_1);
+  android::Mutex::Autolock::_Autolock(aAStack28,(Mutex *)((ulonglong)uVar2 >> 0x20));
+  if (*piVar1 == local_18) {
+    return (int)uVar2;
+  }
+                    /* WARNING: Subroutine does not return */
+  __stack_chk_fail();
+}
+

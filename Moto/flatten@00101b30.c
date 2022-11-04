@@ -1,0 +1,101 @@
+
+/* BSTRefocusParam::flatten() */
+
+undefined4 __thiscall BSTRefocusParam::flatten(BSTRefocusParam *this)
+
+{
+  BSTRefocusParam BVar1;
+  undefined2 uVar2;
+  undefined4 uVar3;
+  undefined *puVar4;
+  undefined4 *puVar5;
+  
+  uVar3 = *(undefined4 *)this;
+  puVar5 = *(undefined4 **)(this + 0x430);
+  *(undefined2 *)((int)puVar5 + 9) = 1;
+  *puVar5 = uVar3;
+  *(undefined *)(puVar5 + 2) = 0;
+  BVar1 = this[4];
+  *(undefined2 *)((int)puVar5 + 0xd) = 2;
+  *(undefined *)(puVar5 + 3) = 1;
+  *(BSTRefocusParam *)((int)puVar5 + 0xb) = BVar1;
+  uVar2 = *(undefined2 *)(this + 6);
+  *(undefined2 *)((int)puVar5 + 0x12) = 2;
+  *(undefined *)((int)puVar5 + 0x11) = 0x13;
+  *(undefined2 *)((int)puVar5 + 0xf) = uVar2;
+  uVar2 = *(undefined2 *)(this + 8);
+  *(undefined2 *)((int)puVar5 + 0x17) = 2;
+  *(undefined *)((int)puVar5 + 0x16) = 2;
+  *(undefined2 *)(puVar5 + 5) = uVar2;
+  uVar2 = *(undefined2 *)(this + 10);
+  *(undefined2 *)(puVar5 + 7) = 2;
+  *(undefined *)((int)puVar5 + 0x1b) = 3;
+  *(undefined2 *)((int)puVar5 + 0x19) = uVar2;
+  uVar2 = *(undefined2 *)(this + 0xc);
+  *(undefined2 *)((int)puVar5 + 0x21) = 2;
+  *(undefined *)(puVar5 + 8) = 4;
+  *(undefined2 *)((int)puVar5 + 0x1e) = uVar2;
+  uVar2 = *(undefined2 *)(this + 0xe);
+  *(undefined *)((int)puVar5 + 0x25) = 5;
+  *(undefined2 *)((int)puVar5 + 0x26) = 2;
+  *(undefined2 *)((int)puVar5 + 0x23) = uVar2;
+  uVar2 = *(undefined2 *)(this + 0x10);
+  *(undefined *)((int)puVar5 + 0x2a) = 6;
+  *(undefined2 *)((int)puVar5 + 0x2b) = 2;
+  *(undefined2 *)(puVar5 + 10) = uVar2;
+  uVar2 = *(undefined2 *)(this + 0x12);
+  *(undefined *)((int)puVar5 + 0x2f) = 7;
+  *(undefined2 *)(puVar5 + 0xc) = 2;
+  *(undefined2 *)((int)puVar5 + 0x2d) = uVar2;
+  uVar2 = *(undefined2 *)(this + 0x14);
+  *(undefined *)(puVar5 + 0xd) = 8;
+  *(undefined2 *)((int)puVar5 + 0x35) = 1;
+  *(undefined2 *)((int)puVar5 + 0x32) = uVar2;
+  BVar1 = this[0x16];
+  *(undefined2 *)((int)puVar5 + 0x39) = 1;
+  *(undefined *)(puVar5 + 0xe) = 9;
+  *(BSTRefocusParam *)((int)puVar5 + 0x37) = BVar1;
+  BVar1 = this[0x17];
+  *(undefined2 *)((int)puVar5 + 0x3d) = 2;
+  *(undefined *)(puVar5 + 0xf) = 10;
+  *(BSTRefocusParam *)((int)puVar5 + 0x3b) = BVar1;
+  uVar2 = *(undefined2 *)(this + 0x18);
+  *(undefined2 *)((int)puVar5 + 0x42) = 2;
+  *(undefined *)((int)puVar5 + 0x41) = 0xb;
+  *(undefined2 *)((int)puVar5 + 0x3f) = uVar2;
+  uVar2 = *(undefined2 *)(this + 0x1a);
+  *(undefined2 *)((int)puVar5 + 0x47) = 2;
+  *(undefined *)((int)puVar5 + 0x46) = 0xc;
+  *(undefined2 *)(puVar5 + 0x11) = uVar2;
+  uVar2 = *(undefined2 *)(this + 0x1c);
+  *(undefined2 *)(puVar5 + 0x13) = 2;
+  *(undefined *)((int)puVar5 + 0x4b) = 0xd;
+  *(undefined2 *)((int)puVar5 + 0x49) = uVar2;
+  uVar2 = *(undefined2 *)(this + 0x1e);
+  *(undefined2 *)((int)puVar5 + 0x51) = 4;
+  *(undefined *)(puVar5 + 0x14) = 0xe;
+  *(undefined2 *)((int)puVar5 + 0x4e) = uVar2;
+  uVar3 = *(undefined4 *)(this + 0x20);
+  *(undefined2 *)(puVar5 + 0x16) = 4;
+  *(undefined *)((int)puVar5 + 0x57) = 0xf;
+  *(undefined4 *)((int)puVar5 + 0x53) = uVar3;
+  uVar3 = *(undefined4 *)(this + 0x24);
+  *(undefined2 *)((int)puVar5 + 0x5f) = 4;
+  *(undefined *)((int)puVar5 + 0x5e) = 0x10;
+  *(undefined4 *)((int)puVar5 + 0x5a) = uVar3;
+  uVar3 = *(undefined4 *)(this + 0x28);
+  *(undefined2 *)((int)puVar5 + 0x66) = 2;
+  *(undefined *)((int)puVar5 + 0x65) = 0x11;
+  *(undefined4 *)((int)puVar5 + 0x61) = uVar3;
+  uVar2 = *(undefined2 *)(this + 0x2c);
+  *(undefined *)((int)puVar5 + 0x6a) = 0x12;
+  *(undefined2 *)(puVar5 + 0x1a) = uVar2;
+  *(undefined2 *)((int)puVar5 + 0x6b) = *(undefined2 *)(this + 0x2c);
+  __aeabi_memcpy8((void *)((int)puVar5 + 0x6d),this + 0x2e,(uint)*(ushort *)(this + 0x2c));
+  puVar4 = (undefined *)((uint)*(ushort *)(this + 0x2c) + (int)(void *)((int)puVar5 + 0x6d));
+  *puVar4 = 0xff;
+  puVar5[1] = puVar4 + (1 - (int)(puVar5 + 2));
+  *(undefined **)(this + 0x434) = puVar4 + (1 - *(int *)(this + 0x430));
+  return 0;
+}
+

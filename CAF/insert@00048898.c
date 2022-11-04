@@ -1,0 +1,44 @@
+
+/* android::List<qcamera::QCamera3HardwareInterface::PendingRequestInfo>::insert(android::List<qcamera::QCamera3HardwareInterface::PendingRequestInfo>::_ListIterator<qcamera::QCamera3HardwareInterface::PendingRequestInfo,
+   android::List<qcamera::QCamera3HardwareInterface::PendingRequestInfo>::NON_CONST_ITERATOR>,
+   qcamera::QCamera3HardwareInterface::PendingRequestInfo const&) */
+
+void android::List<qcamera::QCamera3HardwareInterface::PendingRequestInfo>::insert
+               (_ListIterator param_1,uint *param_2)
+
+{
+  _Node *this;
+  _Node *p_Var1;
+  _Node *p_Var2;
+  _Node *p_Var3;
+  _ListIterator_qcamera__ReprocessBuffer_android__List_qcamera__ReprocessBuffer___NON_CONST_ITERATOR_
+  *in_r2;
+  uint *in_r3;
+  
+  this = (_Node *)operator_new(0x58);
+  _Node::_Node(this,in_r3);
+  p_Var1 = (_Node *)List<qcamera::ReprocessBuffer>::
+                    _ListIterator<qcamera::ReprocessBuffer,android::List<qcamera::ReprocessBuffer>::NON_CONST_ITERATOR>
+                    ::getNode(in_r2);
+  _Node::setNext(this,p_Var1);
+  p_Var2 = (_Node *)List<qcamera::ReprocessBuffer>::
+                    _ListIterator<qcamera::ReprocessBuffer,android::List<qcamera::ReprocessBuffer>::NON_CONST_ITERATOR>
+                    ::getNode(in_r2);
+  p_Var3 = (_Node *)_Node::getPrev(p_Var2);
+  _Node::setPrev(this,p_Var3);
+  p_Var2 = (_Node *)List<qcamera::ReprocessBuffer>::
+                    _ListIterator<qcamera::ReprocessBuffer,android::List<qcamera::ReprocessBuffer>::NON_CONST_ITERATOR>
+                    ::getNode(in_r2);
+  p_Var2 = (_Node *)_Node::getPrev(p_Var2);
+  _Node::setNext(p_Var2,(_Node *)this);
+  p_Var2 = (_Node *)List<qcamera::ReprocessBuffer>::
+                    _ListIterator<qcamera::ReprocessBuffer,android::List<qcamera::ReprocessBuffer>::NON_CONST_ITERATOR>
+                    ::getNode(in_r2);
+  _Node::setPrev(p_Var2,(_Node *)this);
+  List<qcamera::ReprocessBuffer>::
+  _ListIterator<qcamera::ReprocessBuffer,android::List<qcamera::ReprocessBuffer>::NON_CONST_ITERATOR>
+  ::_ListIterator((_ListIterator_qcamera__ReprocessBuffer_android__List_qcamera__ReprocessBuffer___NON_CONST_ITERATOR_
+                   *)param_1,(_Node *)this);
+  return;
+}
+
